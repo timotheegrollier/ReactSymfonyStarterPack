@@ -14,4 +14,12 @@ class MainController extends AbstractController
     {
        return $this->render('/index.html.twig');
     }
+
+
+    #[Route('/{reactRouting}', name: 'app_react_routes')]
+    public function others(): Response
+    {
+
+        return $this->render('./index.html.twig');
+    }
 }
